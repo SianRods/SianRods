@@ -1,5 +1,5 @@
 # 💫 About Me:
-Currently Sophomore at Dwarkadas J.  Sanghvi College of Engineering.<br>I am exploring the field of Machine Learning , Data Science & Data Analytics.<br><br>
+Currently Third Year Student at Dwarkadas J.  Sanghvi College of Engineering.<br>I am exploring the field of Backend Development in Java using Spring/Spring Boot , Machine Learning , Data Science & Data Analytics.<br><br>
 
 
 ## 🌐 Socials:
