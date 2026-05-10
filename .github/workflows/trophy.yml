@@ -18,6 +18,8 @@ jobs:
     timeout-minutes: 5
 
     steps:
+      - uses: actions/checkout@v4
+
       - name: generate trophy.svg
         uses: Erik-Donath/github-profile-trophy@feature/generate-svg
         with:
