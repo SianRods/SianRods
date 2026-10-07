@@ -25,12 +25,17 @@ jobs:
       - name: prepare output directory
         run: mkdir -p dist
 
+      - name: verify trophy token
+        env:
+          TROPHY_TOKEN: ${{ secrets.TROPHY_TOKEN }}
+        run: test -n "$TROPHY_TOKEN" || (echo "::error::TROPHY_TOKEN secret is not configured" && exit 1)
+
       - name: generate trophy.svg
         uses: Erik-Donath/github-profile-trophy@feature/generate-svg
         with:
           username: ${{ github.repository_owner }}
           file: dist/trophy.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.TROPHY_TOKEN }}
           theme: monokai
           max-cols: 6
           max-rows: 1
